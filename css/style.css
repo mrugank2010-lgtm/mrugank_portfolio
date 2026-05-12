@@ -128,6 +128,12 @@ body::-webkit-scrollbar-thumb {
 	clear: both;
 }
 
+@media (max-width: 768px) {
+	.container {
+		padding: 0px 20px;
+	}
+}
+
 h1,
 h2,
 h3,
@@ -519,8 +525,8 @@ body.opened .kura_tm_topbar {
 }
 
 .kura_tm_mobile_menu .mobile_in .logo img {
-	max-width: 80px;
-	max-height: 50px;
+	max-width: 120px;
+	max-height: 60px;
 	mix-blend-mode: multiply;
 }
 
@@ -560,7 +566,7 @@ body.opened .kura_tm_topbar {
 	text-decoration: none;
 	color: #000;
 	display: inline-block;
-	padding: 0px 0px;
+	padding: 8px 0px;
 	font-family: "Poppins";
 	font-weight: 500;
 }
@@ -1919,6 +1925,18 @@ body.dark .brand_grid .list_inner.dark_tile {
 @media (max-width: 480px) {
 	.brand_grid {
 		grid-template-columns: repeat(2, 1fr);
+		gap: 10px;
+	}
+	
+	.brand_grid .list_inner {
+		height: 80px;
+		padding: 10px;
+	}
+}
+
+@media (max-width: 350px) {
+	.brand_grid {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -3242,6 +3260,24 @@ body.dark .kura_tm_settings .cursor li .svg,
 
 }
 
+@media (max-width: 480px) {
+	.kura_tm_hero .job {
+		font-size: 26px;
+	}
+	
+	.kura_tm_main_title h3 {
+		font-size: 22px;
+	}
+	
+	.kura_tm_hero .short_info ul li h3 {
+		font-size: 28px;
+	}
+	
+	.kura_tm_hero .name {
+		font-size: 16px;
+	}
+}
+
 .kura_tm_portfolio .list_inner .image {
 	position: relative;
 	width: 100%;
@@ -3333,7 +3369,7 @@ body.dark .kura_tm_settings .cursor li .svg,
 		flex-direction: column !important;
 		align-items: flex-start !important;
 		justify-content: flex-start !important;
-		padding: 70px 0 0 70px !important;
+		padding: 70px 0 0 50px !important; /* Reduced padding from 70px to 50px */
 		height: 100% !important;
 	}
 
@@ -3380,19 +3416,18 @@ body.dark .kura_tm_settings .cursor li .svg,
 		left: 0px;
 	}
 
-	/* Shift content containers to accommodate the sidebar */
+	/* Shift content containers to accommodate the sidebar - using fluid padding */
 	.kura_tm_section .container,
 	.kura_tm_hero .container {
-		padding-left: 270px !important;
-		/* Added extra space for breathing room */
-		max-width: 1280px !important;
+		padding-left: clamp(250px, 20vw, 270px) !important;
+		max-width: 1350px !important;
 		margin-left: 0 !important;
 		margin-right: auto !important;
 	}
 
 	/* Adjust Hero content for new layout */
 	.kura_tm_hero .content .left {
-		width: 60%;
+		width: 55%; /* Slightly reduced to give more room to the image */
 	}
 }
 
@@ -3690,6 +3725,17 @@ body.dark .kura_tm_settings .cursor li .svg,
 	background: #C5A47E;
 	border-color: #C5A47E;
 	color: #000;
+}
+
+.tab_icon {
+	width: 22px;
+	height: 22px;
+	object-fit: contain;
+	transition: all 0.3s ease;
+}
+
+.tab_btn.active .tab_icon {
+	filter: brightness(0);
 }
 
 /* Photos Grid as Horizontal Film Strip (Cards) */
