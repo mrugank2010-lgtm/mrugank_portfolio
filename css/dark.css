@@ -1,0 +1,382 @@
+@charset "utf-8";
+
+/* ===================================
+   UNHEARD PICTURES - CUSTOM DARK THEME
+   Based on logo colors: Black, White, Gray tones
+   Accent: Deep charcoal with subtle highlights
+   =================================== */
+
+body.dark {
+  background-color: #545454;
+  /* Dark Grey background matching logos (#545454) */
+  color: #d4d4d4;
+}
+
+/* Make logo bigger and visible in dark mode */
+body.dark .kura_tm_topbar .logo img {
+  max-height: 95px;
+  height: auto;
+  filter: none; /* White SVG already used, no invert needed */
+  mix-blend-mode: normal;
+}
+
+body.dark .kura_tm_mobile_menu .logo img {
+  max-height: 80px;
+  filter: none;
+  mix-blend-mode: normal;
+}
+
+body.dark :-moz-placeholder {
+  color: #d4d4d4;
+  opacity: 1;
+}
+
+body.dark ::-moz-placeholder {
+  color: #d4d4d4;
+  opacity: 1;
+}
+
+body.dark :-ms-input-placeholder {
+  color: #d4d4d4;
+}
+
+body.dark ::-ms-input-placeholder {
+  color: #d4d4d4;
+}
+
+body.dark ::placeholder {
+  color: #d4d4d4;
+}
+
+/* Scrollbar styling */
+body.dark::-webkit-scrollbar {
+  width: 11px;
+}
+
+body.dark {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #1a1a1a;
+}
+
+body.dark:-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 6px;
+  border: 3px solid #1a1a1a;
+}
+
+/* Typography */
+body.dark h3 {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Top bar - sleek black */
+body.dark .kura_tm_topbar .wrapper {
+  background-color: #545454;
+}
+
+body.dark .kura_tm_topbar.animate .wrapper {
+  background-color: #545454;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Mobile menu */
+body.dark .kura_tm_mobile_menu .mobile_menu_inner {
+  background-color: #545454;
+}
+
+body.dark .kura_tm_mobile_menu .dropdown {
+  background-color: #545454;
+}
+
+body.dark .kura_tm_mobile_menu .dropdown .dropdown_inner ul li a {
+  color: #fff;
+}
+
+/* Hero section - matching background */
+body.dark .kura_tm_hero {
+  background-color: #545454;
+}
+
+/* Hamburger menu */
+body.dark .hamburger-inner,
+body.dark .hamburger-inner:after,
+body.dark .hamburger-inner:before {
+  background-color: #fff;
+}
+
+body.dark .hamburger.is-active .hamburger-inner,
+body.dark .hamburger.is-active .hamburger-inner:after,
+body.dark .hamburger.is-active .hamburger-inner:before {
+  background-color: #fff;
+}
+
+/* Navigation links */
+body.dark .kura_tm_topbar .list ul li a {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+body.dark .kura_tm_topbar .list ul li a:hover {
+  color: #888;
+}
+
+/* Hero services */
+body.dark .kura_tm_hero .services ul li a {
+  color: #fff;
+}
+
+body.dark .kura_tm_hero .down a {
+  color: #fff;
+}
+
+/* Portfolio overlays - subtle dark gray */
+body.dark .kura_tm_portfolio .portfolio_list .overlay {
+  background-color: #1a1a1a;
+}
+
+body.dark .kura_tm_portfolio .portfolio_list .svg {
+  color: #fff;
+  fill: #fff;
+}
+
+/* Ensure settings and arrow icons are white in dark mode */
+body.dark .kura_tm_topbar .list ul li a .svg,
+body.dark .my_navigation ul li a .svg,
+body.dark .kura_tm_hero .down a .svg,
+body.dark .kura_tm_topbar .theme-switcher img.svg {
+  filter: invert(1);
+}
+
+/* Modal box */
+body.dark .kura_tm_modalbox .main_details .detailbox .first {
+  color: #fff;
+}
+
+body.dark .kura_tm_modalbox .close .svg {
+  filter: invert(1);
+}
+
+body.dark .kura_tm_hero .services ul li img.svg {
+  filter: invert(1);
+  width: 17px;
+  height: 17px;
+}
+
+body.dark .kura_tm_modalbox .main_details .detailbox span a {
+  color: #d4d4d4;
+}
+
+body.dark .kura_tm_modalbox .main_details .detailbox .share li a {
+  color: #fff;
+}
+
+/* Swiper progress */
+body.dark .kura_tm_swiper_progress span {
+  color: #fff;
+}
+
+body.dark .kura_tm_swiper_progress .my_navigation ul li a {
+  color: #fff;
+}
+
+body.dark .kura_tm_swiper_progress .pagination_progress .all {
+  background-color: rgba(255, 255, 255, .15);
+}
+
+body.dark .kura_tm_swiper_progress .pagination_progress .all span {
+  background-color: rgba(255, 255, 255, .6);
+}
+
+/* Skills section */
+body.dark .kura_tm_skills .text p {
+  color: #d4d4d4;
+}
+
+/* Timeline */
+body.dark .kura_tm_timeline .timeline_list ul li .list_inner:nth-child(2) span {
+  color: #fff;
+}
+
+body.dark .kura_tm_timeline .timeline_list ul li {
+  border-bottom-color: rgba(255, 255, 255, .08);
+}
+
+/* Pricing/Brands section */
+body.dark .kura_tm_pricing {
+  background-color: #0d0d0d;
+}
+
+body.dark .kura_tm_pricing .right ul li .list_inner {
+  background-color: #1a1a1a;
+  box-shadow: 0px 0px 30px rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+body.dark .kura_tm_pricing .right ul li .list_inner:hover {
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark .kura_tm_pricing .right ul li span {
+  color: #fff;
+}
+
+body.dark .brand_grid .list_inner {
+  background-color: #fff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.dark .brand_grid .list_inner.dark_tile {
+  background-color: #1a1a1a !important;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.dark .brand_grid .list_inner img {
+  filter: none;
+  opacity: 1;
+}
+
+
+/* News section */
+body.dark .kura_tm_news .news_list .overlay {
+  background-color: #1a1a1a;
+}
+
+body.dark .kura_tm_news .news_list .list_inner .svg {
+  color: #fff;
+}
+
+/* Contact section */
+body.dark .kura_tm_contact {
+  background-color: #0d0d0d;
+}
+
+body.dark .kura_tm_contact .short ul li .list_inner span {
+  color: #fff;
+}
+
+body.dark .kura_tm_contact .fields ul li input {
+  border: 1px solid rgba(255, 255, 255, .1);
+  color: #d4d4d4;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.dark .kura_tm_contact .fields ul li input:focus {
+  border: 1px solid rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+body.dark .kura_tm_contact .fields .last textarea {
+  border: 1px solid rgba(255, 255, 255, .1);
+  color: #d4d4d4;
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+body.dark .kura_tm_contact .short ul li .list_inner img {
+  filter: invert(1);
+}
+
+body.dark .kura_tm_contact .fields .last textarea:focus {
+  border: 1px solid rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Modal box inner */
+body.dark .kura_tm_modalbox .box_inner {
+  background-color: #1a1a1a;
+}
+
+body.dark .kura_tm_modalbox .description_wrap {
+  scrollbar-width: thin;
+  scrollbar-color: #666 #1a1a1a;
+}
+
+body.dark .kura_tm_modalbox .description_wrap:-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+body.dark .kura_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
+  background-color: #666;
+  border-radius: 6px;
+  border: 3px solid #1a1a1a;
+}
+
+/* Preloader */
+body.dark #preloader:before,
+body.dark #preloader:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+body.dark #preloader:after {
+  left: auto;
+  right: 0;
+}
+
+body.dark #preloader .loader_line {
+  margin: auto;
+  width: 1px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+body.dark .loader_line:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 0%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background-color: #555;
+  -webkit-animation: lineheight 1000ms ease-in-out 0s forwards;
+  -o-animation: lineheight 1000ms ease-in-out 0s forwards;
+  animation: lineheight 1000ms ease-in-out 0s forwards;
+}
+
+body.dark .loader_line:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #ccc;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-animation: lineround 1200ms linear 0s infinite;
+  -o-animation: lineround 1200ms linear 0s infinite;
+  animation: lineround 1200ms linear 0s infinite;
+  animation-delay: 2000ms;
+}
+
+/* Awards section - dark theme */
+body.dark .kura_tm_awards .awards_image img {
+  filter: invert(1) brightness(1.5);
+}
