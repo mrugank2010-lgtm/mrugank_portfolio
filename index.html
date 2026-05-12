@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
@@ -72,10 +72,10 @@
 						<h3>My Work</h3>
 					</div>
 					<div class="portfolio_tabs">
-						<button class="tab_btn active" data-tab="photos"><img src="img/camera-icon.png" class="tab_icon" alt="" /> Photos</button>
-						<button class="tab_btn" data-tab="videos"><img src="img/video-icon.png" class="tab_icon" alt="" /> Videos</button>
+						<button class="tab_btn active" data-tab="videos"><img src="img/video-icon.png" class="tab_icon" alt="" /> Videos</button>
+						<button class="tab_btn" data-tab="photos"><img src="img/camera-icon.png" class="tab_icon" alt="" /> Photos</button>
 					</div>
-					<div class="tab_content" id="tab-videos" style="display:none;">
+					<div class="tab_content" id="tab-videos">
 						<div class="portfolio_grid">
 
 							<div class="grid_item">
@@ -290,7 +290,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="tab_content gallery_zoom" id="tab-photos">
+					<div class="tab_content gallery_zoom" id="tab-photos" style="display:none;">
 
 						<h2 class="photo_category_title">Black and white film photos</h2>
 
@@ -1064,7 +1064,7 @@
 							</div>
 						</div>
 						<div class="down anchor">
-							<a href="#portfolio"><img class="svg" src="img/svg/down-arrow.svg" alt="" /></a>
+							<a href="#timeline"><img class="svg" src="img/svg/down-arrow.svg" alt="" /></a>
 						</div>
 					</div>
 				</div>
@@ -1072,8 +1072,8 @@
 		</div>
 		<!-- /HERO -->
 
-		<!-- PORTFOLIO -->
-		<div class="kura_tm_section" id="portfolio">
+		<!-- PORTFOLIO (Hidden from main page, accessible via menu) -->
+		<div class="kura_tm_section" id="portfolio" style="display: none;">
 			<div class="kura_tm_portfolio">
 				<div class="container">
 					<div class="kura_tm_main_title">
