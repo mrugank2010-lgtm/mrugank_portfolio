@@ -118,7 +118,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container {
-	max-width: 1450px; /* Increased from 1250px for better large screen support */
+	max-width: 1450px; /* Expansive layout for large monitors */
 	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -625,7 +625,7 @@ body.opened .kura_tm_hero .content .left {
 }
 
 .kura_tm_hero .job {
-	font-size: clamp(32px, 4vw, 55px); /* Fluid font size for large screens */
+	font-size: clamp(32px, 4.5vw, 65px); /* Adjustable size for all screens */
 	font-weight: 800;
 	line-height: 1.1;
 	text-transform: uppercase;
@@ -1039,200 +1039,6 @@ body.opened .kura_tm_hero .down {
 .kura_tm_main_title span {
 	display: inline-block;
 	margin-bottom: 10px;
-.kura_tm_modalbox .description_wrap:-webkit-scrollbar-track {
-	background: #fff;
-}
-
-.kura_tm_modalbox .description_wrap::-webkit-scrollbar-thumb {
-	background-color: #999;
-	border-radius: 6px;
-	border: 3px solid #fff;
-}
-
-.kura_tm_hero .short_info {
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-
-.kura_tm_hero .short_info ul {
-	margin: 0px;
-	list-style-type: none;
-}
-
-.kura_tm_hero .short_info ul li {
-	margin: 0px 50px 15px 0px;
-	display: inline-block;
-}
-
-.kura_tm_hero .short_info ul li:last-child {
-	margin-right: 0px;
-}
-
-.kura_tm_hero .short_info ul li .list_inner {
-	display: flex;
-	align-items: center;
-}
-
-.kura_tm_hero .short_info ul li h3 {
-	font-size: 45px;
-	font-weight: 600;
-}
-
-.kura_tm_hero .short_info ul li span {
-	font-family: "Poppins";
-	padding-left: 15px;
-	display: inline-block;
-	line-height: 1.4;
-	position: relative;
-	top: -3px;
-	font-size: 14px;
-}
-
-.kura_tm_hero .content .right {
-	width: 50%;
-	text-align: right;
-	padding-left: 200px;
-	position: relative;
-	opacity: 0;
-	visibility: hidden;
-	top: 20px;
-
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
-}
-
-body.opened .kura_tm_hero .content .right {
-	opacity: 1;
-	visibility: visible;
-	top: 0px;
-}
-
-.kura_tm_hero .content .right .image {
-	position: relative;
-}
-
-.kura_tm_hero .content .right .image img {
-	min-width: 100%;
-	position: relative;
-	opacity: 0;
-}
-
-.kura_tm_hero .content .right .image .main {
-	position: absolute;
-	top: 0px;
-	bottom: 0px;
-	left: 0px;
-	right: 0px;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	transform: rotate(0deg);
-	z-index: 2;
-	border-radius: 10px;
-
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
-}
-
-body.opened .kura_tm_hero .content .right .image .main {
-	transform: rotate(7deg);
-}
-
-.kura_tm_hero .content .right .image .shape {
-	position: absolute;
-	top: 23px;
-	bottom: -23px;
-	left: -95px;
-	width: 90%;
-	background-color: #C5A47E;
-	transform: rotate(0deg);
-	z-index: 1;
-	border-radius: 10px;
-
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
-}
-
-body.opened .kura_tm_hero .content .right .image .shape {
-	transform: rotate(-6deg);
-}
-
-.kura_tm_hero .down {
-	position: absolute;
-	left: 0px;
-	bottom: 8%;
-	opacity: 0;
-	visibility: hidden;
-
-	-webkit-transition: all .4s ease;
-	-moz-transition: all .4s ease;
-	-ms-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
-}
-
-body.opened .kura_tm_hero .down {
-	opacity: 1;
-	visibility: visible;
-	bottom: 10%;
-}
-
-.kura_tm_hero .down .svg {
-	width: 40px;
-	height: 40px;
-	animation: scroll ease 2s infinite;
-}
-
-@keyframes scroll {
-	0% {
-		transform: translateY(0);
-	}
-
-	30% {
-		transform: translateY(20px);
-	}
-}
-
-.kura_tm_hero .down a {
-	text-decoration: none;
-	color: #000;
-
-	-webkit-transition: all .3s ease;
-	-moz-transition: all .3s ease;
-	-ms-transition: all .3s ease;
-	-o-transition: all .3s ease;
-	transition: all .3s ease;
-}
-
-.kura_tm_hero .down a:hover {
-	color: #C5A47E;
-}
-
-/*---------------------------------------------------*/
-/*	05) KURA PORTFOLIO
-/*---------------------------------------------------*/
-
-.kura_tm_main_title {
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-}
-
-.kura_tm_main_title span {
-	display: inline-block;
-	margin-bottom: 10px;
 	color: #C5A47E;
 	font-family: "Poppins";
 	font-weight: 500;
@@ -1241,7 +1047,7 @@ body.opened .kura_tm_hero .down {
 .kura_tm_main_title h3 {
 	font-weight: 800;
 	text-transform: uppercase;
-	font-size: clamp(30px, 3.5vw, 50px); /* Fluid main titles */
+	font-size: clamp(26px, 3.5vw, 50px); /* Fluid title sizing */
 }
 
 .kura_tm_portfolio {
@@ -3614,10 +3420,9 @@ body.dark .kura_tm_settings .cursor li .svg,
 	/* Shift content containers to accommodate the sidebar - using fluid padding */
 	.kura_tm_section .container,
 	.kura_tm_hero .container {
-		padding-left: clamp(250px, 20vw, 270px) !important;
-		max-width: 1350px !important;
-		margin-left: 0 !important;
-		margin-right: auto !important;
+		padding-left: clamp(250px, 15vw, 350px) !important;
+		max-width: 1600px !important;
+		margin: 0 auto !important;
 	}
 
 	/* Adjust Hero content for new layout */
@@ -4314,23 +4119,4 @@ body.dark .kura_tm_settings .cursor li .svg,
     .tab_btn .tab_icon {
         height: 18px;
     }
-}
-
-/* EXTRA LARGE SCREENS (Ultra-wide monitors) */
-@media (min-width: 1900px) {
-	.container {
-		max-width: 1650px;
-	}
-	
-	.kura_tm_hero .job {
-		font-size: 65px;
-	}
-
-	.kura_tm_topbar .logo img {
-		max-height: 120px;
-	}
-
-	.kura_tm_main_title h3 {
-		font-size: 60px;
-	}
 }
